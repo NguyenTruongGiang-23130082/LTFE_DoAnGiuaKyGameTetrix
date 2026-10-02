@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="game-toggle" hidden>
+<div class="game-frame">
+    <div class="game-layout">
+        <div class="sidebar">
+            <h1 class="title">TETRIS</h1>
+            <div class="info-box">
+                <h3>Điểm:</h3>
+                <p class="score">0</p>
+            </div>
+            <button class="btn btn-red">Bắt Đầu Lại</button>
+            <button class="btn btn-dark">Tạm Dừng</button>
+            <div class="info-box controls">
+                <p><b>Điều khiển:</b></p>
+                <p>← → : Di chuyển</p>
+                <p>↑ : Xoay khối</p>
+                <p>↓ : Rơi nhanh</p>
+            </div>
+        </div>
+        <div class="main-board">
+            <div class="play-area"></div>
+            <div class="start-overlay">
+                <h2 class="overlay-title">TETRIS</h2>
+                <p class="overlay-text">Nhấn nút bên dưới để chơi.</p>
+                <label for="game-toggle" class="btn btn-start-game">Bắt Đầu</label>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
