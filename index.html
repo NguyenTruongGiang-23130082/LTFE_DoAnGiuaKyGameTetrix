@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<input type="checkbox" id="game-toggle" hidden>
 <div class="game-frame">
     <div class="game-layout">
         <div class="sidebar">
@@ -26,14 +25,31 @@
             </div>
         </div>
         <div class="main-board">
-            <div class="play-area"></div>
-            <div class="start-overlay">
+            <div class="play-area" id="playArea"></div>
+            <div class="level-overlay" id="levelOverlay">
+                <h2 class="overlay-title">CẤP ĐỘ</h2>
+                <div class="level-grid">
+                    <button class="btn-level">1</button>
+                    <button class="btn-level">2</button>
+                    <button class="btn-level">3</button>
+                    <button class="btn-level">4</button>
+                    <button class="btn-level">5</button>
+                    <button class="btn-level">6</button>
+                    <button class="btn-level">7</button>
+                    <button class="btn-level">8</button>
+                    <button class="btn-level">9</button>
+                    <button class="btn-level">10</button>
+                </div>
+                <button class="btn-back-level" id="btnBackToStart">← Quay lại</button>
+            </div>
+            <div class="start-overlay" id="startOverlay">
                 <h2 class="overlay-title">TETRIS</h2>
                 <p class="overlay-text">Nhấn nút bên dưới để chơi.</p>
-                <label for="game-toggle" class="btn btn-start-game">Bắt Đầu</label>
+                <button class="btn btn-start-game" id="btnStartGame">Bắt Đầu</button>
             </div>
         </div>
     </div>
 </div>
+<script src="javascript.js"></script>
 </body>
 </html>
